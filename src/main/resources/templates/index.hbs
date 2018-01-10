@@ -1,0 +1,37 @@
+{{#partial "content"}}
+<div class = "jumbotron">
+<h1>Places I've Been</h1>
+<div>
+
+{{#if posts}} <!--if posts exist, then -->
+       {{#each posts }} <!--loop-->
+        <div class = "well">
+        <p>I've been to...</p>
+        <p>Location: {{ location }}</p> <!--show-->
+        <p>Date Visited: {{ date }}</p>
+        <p>Description of Location: {{ description }}</p>
+        </div>
+       {{/each}}
+   {{else}} <!--no posts!-->
+    <p>No places recently visited!</p>
+   {{/if}}
+
+<p>Add a new location from which you've visited:</p>
+
+<form action="/posts/new" method="POST">
+  <label for="location">Location Name: </label>
+  <input id="location" name="location" type="text">
+  <br></br>
+  <label for="date">Date visited: </label>
+  <input id="date" name="date" type="date">
+  <br></br>
+  <label for="description">Description of Location: </label>
+  <input id="description" name="description" type="text">
+  <br></br>
+
+
+  <button type="submit" class="btn btn-danger">Add Location</button>
+</form>
+{{/partial}}
+
+{{> layout.hbs}}

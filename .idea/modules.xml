@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/places-ive-been.iml" filepath="$PROJECT_DIR$/.idea/modules/places-ive-been.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/places-ive-been_main.iml" filepath="$PROJECT_DIR$/.idea/modules/places-ive-been_main.iml" group="places-ive-been" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/places-ive-been_test.iml" filepath="$PROJECT_DIR$/.idea/modules/places-ive-been_test.iml" group="places-ive-been" />
+    </modules>
+  </component>
+</project>
